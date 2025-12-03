@@ -4,6 +4,35 @@
  * @author Komarik
 */
 
+/*Более хорошие спойлеры*/
+:root {
+    --spoiler-blur-hover: 8px;
+}
+[class*="attachmentContainer_"][class*="spoilerContent_"] {
+    background-color: unset;
+    &[class*="hiddenSpoiler_"] {
+        > [class*="spoilerWarning_"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="imageContent_"] {
+            filter: none !important;
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="spoilerWarning_"] {
+                opacity: 0.2;
+            }
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
+
 /*Выключение верхней залупы*/
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 div.page__5e434 {
@@ -91,7 +120,7 @@ div.base__5e434 {
         display: block;
         height: 128px;
         position: relative;
-        content: url(https://media.tenor.com/C0mP_I660_0AAAAi/cat-dance.gif);
+        content: url(https://c.tenor.com/3WZzO0DIU6EAAAAd/tenor.gif);
         image-rendering: pixelated;
          align-content: center;
          scale: 3.125;
@@ -322,4 +351,5 @@ path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.
 .membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
   padding-top:8px;
 }
+
 
