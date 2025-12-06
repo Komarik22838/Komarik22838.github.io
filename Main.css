@@ -4,6 +4,26 @@
  * @author Komarik
 */
 
+
+/*Выключение верхней хуйни*/
+@import url('https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
+:root { /*customise top bar*/
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: ;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 4px ;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 300px ;
+    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
+    --vr-header-snippet-button-padding: 5px ;
+    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
+    --vr-header-snippet-winbuttons: flex ;
+}
+.toolbar__9293f.toolbar__49508 {
+ padding-left: 780px;
+}
+
+
 /*Крутые спойлеры*/
 :root {
     --spoiler-blur-hover: 8px;
@@ -30,25 +50,6 @@
             }
         }
     }
-}
-
-
-/*Выключение верхней хуйни*/
-@import url('https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
-:root { /*customise top bar*/
-    /* controls the vertical position of the window buttons */
-    --vr-header-snippet-top: ;
-    /* controls the space above the server list */
-    --vr-header-snippet-server-padding: 4px ;
-    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 300px ;
-    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
-    --vr-header-snippet-button-padding: 5px ;
-    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
-    --vr-header-snippet-winbuttons: flex ;
-}
-.toolbar__9293f.toolbar__49508 {
- padding-left: 780px;
 }
 
 
@@ -269,6 +270,7 @@ path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.
 .membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
   padding-top:8px;
 }
+
 
 
 
