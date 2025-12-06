@@ -120,11 +120,12 @@ div.base__5e434 {
         display: block;
         height: 128px;
         position: relative;
-        content: url(https://c.tenor.com/3WZzO0DIU6EAAAAd/tenor.gif);
+        content: url(https://media1.tenor.com/m/-__Nhp1vdtAAAAAd/boy-kisser-%D0%BA%D0%B8%D1%81%D1%81%D0%B5%D1%80.gif);
         image-rendering: pixelated;
          align-content: center;
-         scale: 3.125;
+         scale: 0.3;
          margin-bottom: 96px;
+         margin-left: -96px;
     }
 }
 
@@ -351,5 +352,6 @@ path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.
 .membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
   padding-top:8px;
 }
+
 
 
