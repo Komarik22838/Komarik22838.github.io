@@ -32,83 +32,25 @@
     }
 }
 
-/*Выключение верхней залупы*/
-@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
-div.page__5e434 {
-  &:not(:has(> div.chat_f75fb0)) {
-    anchor-name: --vr-header-snippet;
-  }
-  & > div.chat_f75fb0 {
-    anchor-name: --vr-header-snippet;
-  }
-}
-div.base__5e434 {
-  grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
-  & > div.content__5e434 {
-    z-index: 0;
-  }
-  & > div.bar_c38106 {
-    position: absolute;
-    position-anchor: --vr-header-snippet;
-    top: var(--vr-header-snippet-top);
-    right: anchor(right);
-    width: anchor-size(width);
-    padding: 0 var(--vr-header-snippet-button-padding) 0 0;
-  }
-  & div.trailing_c38106 {
-    background: none;
-    border: none;
-    height: var(--custom-channel-header-height);
-  }
-}
-:not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
-  right: 0 !important;
-}
-/*customise top bar*/
-:root {
+
+/*Выключение верхней хуйни*/
+@import url('https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
+:root { /*customise top bar*/
     /* controls the vertical position of the window buttons */
-    --vr-header-snippet-top: 0px !important;
+    --vr-header-snippet-top: ;
     /* controls the space above the server list */
-    --vr-header-snippet-server-padding: 16px !important;
+    --vr-header-snippet-server-padding: 4px ;
     /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 225px !important;
+    --vr-header-snippet-space: 300px ;
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
-    --vr-header-snippet-button-padding: 5px !important;
+    --vr-header-snippet-button-padding: 5px ;
     /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
-    --vr-header-snippet-winbuttons: flex !important;
+    --vr-header-snippet-winbuttons: flex ;
 }
-/* allows quest buttons to be clickable */
-.tabWrapper__26669 {
-  -webkit-app-region: no-drag;
+.toolbar__9293f.toolbar__49508 {
+ padding-left: 780px;
 }
-/* search/wishlist/orbs on shop page */
-.alignedRightContent__80679 {
-  position: fixed;
-  right: 189px;
-  -webkit-app-region: no-drag;
-}
-/* orbs balance on quests page */
-.headerBarContent__1a9ce .container__44ee9 {
-  position: fixed;
-  right: 225px;
-  -webkit-app-region: no-drag;
-}
-/* vc open chat icon */
-.toolbar__49508 {
-  position: fixed;
-  top: 16px;
-  right: 213px;
-}
-/* fix main thread button */
-.titleWrapper__9293f {
-  -webkit-app-region: no-drag;
-}
-.anchor_edefb8.anchorUnderlineOnHover_edefb8:has([d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]) {
-  display: none;
-}
-.clickable_c99c29:has([d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z"]) {
-  display: none;
-}
+
 
 /*Другая гиф на загрузке*/
 .content_a2f514 {
@@ -335,6 +277,7 @@ path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.
 .membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
   padding-top:8px;
 }
+
 
 
 
