@@ -1,0 +1,276 @@
+/**
+ * @name Main
+ * @description ❤️
+ * @author Komarik
+*/
+
+/*Выключение верхней хуйни*/
+@import url('https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
+:root { /*customise top bar*/
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: ;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 4px ;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 300px ;
+    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
+    --vr-header-snippet-button-padding: 5px ;
+    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
+    --vr-header-snippet-winbuttons: flex ;
+}
+.toolbar__9293f.toolbar__49508 {
+ padding-left: 780px;
+}
+
+/* Blurred Background while loading */
+.a2f5142ba8328dfd-container.efbae7425593290b-fixClipping {
+  background: 0 0 !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+
+/*Крутые спойлеры*/
+:root {
+    --spoiler-blur-hover: 8px;
+}
+[class*="-attachmentContainer"][class*="-spoilerContent"] {
+    background-color: unset;
+    &[class*="-hiddenSpoiler"] {
+        > [class*="-spoilerWarning"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="-imageContent"] {
+            filter: none !important;
+            [class*="-imageWrapper"] > [class*="-clickableWrapper"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="-spoilerWarning"] {
+                opacity: 0.2;
+            }
+            [class*="-imageWrapper"] > [class*="-clickableWrapper"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
+/*Другая гиф на загрузке*/
+.a2f5142ba8328dfd-content  {
+    display: flex;
+    flex-direction: column;
+    > .a2f5142ba8328dfd-spinner { display: none }
+    &:before {
+        display: block;
+        height: 128px;
+        position: relative;
+        content: url(https://media.tenor.com/C0mP_I660_0AAAAi/cat-dance.gif);
+        image-rendering: pixelated;
+         align-content: center;
+         scale: 3.125;
+         margin-bottom: 96px;
+    }
+}
+
+
+
+/*Анимация Войс лойаута*/
+.panels__5e434 .wrapper_e131a9  {
+  z-index: 2;
+  max-height: 0px;
+  overflow: hidden;
+}
+.panels__5e434:hover .wrapper_e131a9 {
+    max-height: 384px!important;
+}
+.panel__5dec7 { /*Демка*/
+  max-height: 0px;  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  overflow: hidden; 
+}
+.panels__5e434:hover .activityPanel__5e434 {
+    max-height: 384px!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Котик в лс*/
+._6e9f8dce4cc18de3-childWrapper._6e9f8dce4cc18de3-childWrapperNoHoverBg {
+  background-image: url('https://i.postimg.cc/RZcpbYdr/2025-02-16-210044.png');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+._6e9f8dce4cc18de3-childWrapper._6e9f8dce4cc18de3-childWrapperNoHoverBg:hover {
+  background-image: url('https://i.postimg.cc/05CfyRYC/ezgif-com-animated-gif-maker.gif');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z"] {
+  display: none;
+}
+.sidebar_c48ade {
+  overflow: visible!important;
+}
+.container__2637a {
+  padding-bottom: 0px!important;
+}
+.scroller__99e7c {
+  margin-bottom: 0px!important;
+}
+.bottom__7aaec {
+  bottom: 0px!important;
+}
+
+/*Таблица людей в сервере*/
+.visual-refresh [class^="c8ffbb79449f399c-container"] [class^="c8ffbb79449f399c-membersWrap"] {
+  position: fixed; /* Remove if you don't want it to float */
+  height: 100%;
+  opacity: 0%;
+  z-index: 999;
+  right: -235px;
+/*top: 80px;  /* Add/change this according to your desktop/client */
+  filter: drop-shadow(-16px -16px 16px #0005) ;
+  transition-property: right, opacity;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.visual-refresh [class^="c8ffbb79449f399c-container"] [class^="c8ffbb79449f399c-membersWrap"]:hover {
+  right: 0px;
+  opacity: 100%;
+}
+
+/*Анимация выбирания канала*/
+/* cozy peek */
+:root {
+    --list-item-transition: 0.2s ease;
+}
+._2ea32c412048f708-wrapper ._2ea32c412048f708-link {
+    transition: margin-left var(--list-item-transition);
+}
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-link {
+    margin-left: 10px;
+}
+._2ea32c412048f708-unread {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    transition: var(--list-item-transition);
+}
+._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: 3px;
+    background-color: transparent;
+    background: url('https://discord.com/assets/d1fd617c21dd1b26.svg');
+    background-size: 8px;
+    background-position: center;
+}
+
+
+/*Таблица людей в лс*/
+.visual-refresh [aria-labelledby^=user-profile-sidebar-heading-] {
+  position: fixed; /* Remove if you don't want it to float */
+  height: 100%;
+  opacity: 0%;
+  z-index: 999;
+  right: -310px;
+/*top: 80px;  /* Add/change this according to your desktop/client */
+  filter: drop-shadow(-16px -16px 16px #0005) ;
+  transition-property: right, opacity;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.visual-refresh [aria-labelledby^=user-profile-sidebar-heading-]:hover {
+  right: 0px;
+  opacity: 100%;
+}
+
+/*Изменение магазина,Заданий в лс*/
+._99e7cad8d4c55236-scroller[data-list-id^="private-channels-uid_"] {
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
+  >.d125d22cdfd32cfe-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    >div:not([class]):first-child,
+    >div[role="button"],
+    >._99e7cad8d4c55236-privateChannelsHeaderContainer,
+    >._972a0d22c8afa7f0-channel._972a0d22c8afa7f0-dm {
+      width: 100%;
+    }
+    >.e6b7699ce8339e1c-friendsButtonContainer,
+    >div:nth-of-type(3),
+    >._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm),
+    >._553bf02027ac2419-wrapper {
+      margin: 0;
+    }
+    ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+      margin: 0 4px !important;
+      >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
+        padding: 6px;
+        justify-content: center;
+        >._972a0d22c8afa7f0-avatarWithText {
+          padding: 0;
+          >._20a53846fe2e8513-avatar {
+            margin: 0;
+          }
+          >._20a53846fe2e8513-content {
+            display: none;
+          }
+        }
+        >._2b1f52e43a8f1c02-numberBadge {
+          position: absolute;
+          left: 17.5px;
+          bottom: 0;
+          transform: scale(0.7);
+        }
+        >._4ed1af9a212b8f4f-newBadge {
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+}
+
+/*Отключение плашки активности на сервере*/
+.c8ffbb79449f399c-membersGroup._13cf1aa56cd732d2-container._13cf1aa56cd732d2-header ._095fe51feb41b3bb-headerContainer {
+    display: none;
+}
+[data-list-item-id="members-1066649341630087258___0"]{
+    display: none;
+}
+[data-list-item-id="members-1066649341630087258___1"]{
+    display: none;
+}
+[data-list-item-id="members-1066649341630087258___2"]{
+    display: none;
+}
+
+
+.membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
+  padding-top:8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
