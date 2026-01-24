@@ -72,8 +72,7 @@
 }
 
 
-
-/*Анимация Войс лойаута*/
+/*Анимация Войс лойаута
 .panels__5e434 .wrapper_e131a9  {
   z-index: 2;
   max-height: 0px;
@@ -82,7 +81,7 @@
 .panels__5e434:hover .wrapper_e131a9 {
     max-height: 384px!important;
 }
-.panel__5dec7 { /*Демка*/
+.panel__5dec7 { Демка
   max-height: 0px;  
   padding-top: 0px;
   padding-bottom: 0px;
@@ -93,6 +92,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+*/
 
 /*Котик в лс*/
 ._6e9f8dce4cc18de3-childWrapper._6e9f8dce4cc18de3-childWrapperNoHoverBg {
@@ -295,6 +295,7 @@ path[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.
 .membersGroup_c8ffbb{ /*Растояние между людьми на сервере*/
   padding-top:8px;
 }
+
 
 
 
